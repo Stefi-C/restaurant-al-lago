@@ -13,17 +13,17 @@ h1, h2, h3, h4 {
 h2 {
 	font-weight: 400;
 	font-size: 38px;
-	color: #333;
+	color: #3e1307;
 	text-transform: uppercase;
 	position: relative;
 	margin-top: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	padding-bottom: 20px;
 }
 h2::after {
 	position: absolute;
 	content: "";
-	background: #d43031;
+	background: #c44711;
 	height: 2px;
 	width: 70px;
 	bottom: 0;
@@ -33,13 +33,13 @@ h2::after {
 h3 {
 	font-size: 24px;
 	font-weight: 400;
-	color: #333;
+	color: #3e1307;
 }
 h4 {
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: 400;
-	color: #333;
+	color: #3e1307;
 }
 h5 {
 	text-transform: uppercase;
@@ -54,7 +54,7 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: #8eb640;
+	color: #695a0d;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -104,29 +104,29 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin: 0 40px 0 40px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #d43031;
+	color: #c1b98e;
 }
 .on {
-	background-color: #262626 !important;
+	background-color: #3e1307 !important;
 	padding: 0 !important;
 	padding: 10px 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #d43031 !important;
+	color: #c1b98e !important;
 	background-color: transparent;
 }
 .navbar-toggle {
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #d43031;
-	border-color: #d43031;
+	background-color: #c44711;
+	border-color: #c44711;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #FFF;
+	background-color: #f5f2ea;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
-	background-color: #FFF;
+	background-color: #f5f2ea;
 }
 .section-title {
 	margin-bottom: 70px;
@@ -141,6 +141,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .section-title hr {
 	margin: 0 auto;
 	margin-bottom: 40px;
+	background-color: #c1b98e;
 }
 .btn-custom {
 	text-transform: uppercase;
@@ -158,13 +159,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #ddd;
-	border: 2px solid #d43031;
-	background-color: #d43031;
+	border: 2px solid #c44711;
+	background-color: #c44711;
 }
 /* Header Section */
 .intro {
 	display: table;
+	margin-top: 25px;
 	width: 100%;
+	height: 90vh;
 	padding: 0;
 	background: url(../img/gallery/banner-bg.jpg) center center no-repeat;
 	-webkit-background-size: cover;
@@ -177,7 +180,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro h1 {
 	font-family: 'Rochester', cursive;
-	color: #fff;
+	color: #f5f2ea;
 	font-size: 10em;
 	font-weight: 400;
 	margin-top: 0;
@@ -187,7 +190,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 600;
 }
 .intro p {
-	color: #fff;
+	color: #f5f2ea;
 	font-size: 24px;
 	font-weight: 400;
 	margin-top: 150px;
@@ -353,50 +356,11 @@ header .intro-text {
 	  padding-inline: 2.5rem;
 	}
   }
-/*
-#features .features-item {
-	margin: 0 20px;
-	border: 2px solid red;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-#features img {
-	margin: 30px auto 20px;
-	height: 150px;
-	width: 250px;
-	position: relative;
-	box-shadow: 2px 2px 5px #222;
-}
-#features img:hover{
-	transform: scale(1.5);
-	transition: .8s;
-	cursor: pointer;
-}
-#features .about-img:before {
-	display: block;
-	content: '';
-	position: absolute;
-	top: 8px;
-	right: 8px;
-	bottom: 8px;
-	left: 8px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.features-txt {
-	width: 250px;
-	line-height: 24px;
-	margin: 15px 0 30px;
-	text-align: justify;
-}
-#features img:hover .features-txt{
-	opacity: 1;
-}*/
 
 /* About Section */
 #about {
 	padding: 0;
-	background: #f6f6f6;
+	background: #695a0d;
 }
 #about h2::after {
 	bottom: 0;
@@ -407,59 +371,64 @@ header .intro-text {
 	padding: 80px 0;
 }
 #about .about-img {
-	background: #444 url(../img/gallery-bg.jpg) center center no-repeat;
+	background:linear-gradient(to bottom, #695a0d83 0%, #c1b98e6d 100%), url(../img/bg-4.jpeg) center center no-repeat;
 	background-size: cover;
 	height: 570px;
 }
 #about p {
 	line-height: 24px;
 	margin: 15px 0 30px;
+	color: #f5f2ea;
 }
 /* Menu Section */
 #restaurant-menu {
 	padding: 100px 0 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #222;
 }
-#restaurant-menu img {
-	width: 300px;
-	box-shadow: 15px 0 #a7c44c;
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
 }
-#restaurant-menu h3 {
-	padding: 10px 0;
-	text-transform: uppercase;
+.item{
+    position: absolute;
+    width: 400px;
+    height: 388px;
+    text-align: justify;
+    background-color: #f5f2ea;
+    border-radius: 3px;
+    padding: 20px;
+    transition: 0.5s;
+    left: 36%;
+	transform: translateX(-50%);
+    top: 0;
+	box-shadow: 2px 2px 5px #222;
 }
-#restaurant-menu .menu-section hr {
-	margin: 0 auto;
+.item img{
+	width: 100%;
+	height: 100%;
 }
-#restaurant-menu .menu-section {
-	margin: 0 20px 80px;
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #222;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 400px;
 }
-#restaurant-menu .menu-section-title {
-	font-size: 32px;
-	display: block;
-	font-weight: 400;
-	color: #444;
-	margin: 20px 0;
-	text-align: center;
-}
-#restaurant-menu .menu-item {
-	margin: 45px 0;
-	font-size: 18px;
-}
-#restaurant-menu .menu-item-name {
-	font-weight: 400;
-	font-size: 20px;
-	color: #444;
-	margin-bottom: 10px;
-}
-#restaurant-menu .menu-item-description {
-	font-size: 15px;
-	width: 85%;
-}
-#restaurant-menu .menu-item-price {
-	float: right;
-	font-weight: 400;
-	color: #555;
-	margin-top: -36px;
+#next{
+    left: unset;
+    right: 400px;
 }
 /* Gallery Section */
 #gallery {
@@ -487,7 +456,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0;
-	background: #333;
+	background: #3e1307;
 }
 #contact .contact-item p {
 	font-size: 15px;
@@ -511,7 +480,7 @@ header .intro-text {
 #contact h3::after {
 	position: absolute;
 	content: "";
-	background: #d43031;
+	background: #c44711;
 	height: 2px;
 	width: 40px;
 	bottom: 0;
