@@ -318,44 +318,7 @@ header .intro-text {
 	}
   }
   
-  /*=============== BREAKPOINTS ===============*/
-  /* For small devices */
-  @media screen and (max-width: 340px) {
-	.container {
-	  margin-inline: 1rem;
-	}
-  
-	.card__data {
-	  width: 250px;
-	  padding: 1rem;
-	}
-  }
-  
-  /* For medium devices */
-  @media screen and (min-width: 768px) {
-	.card__container {
-	  grid-template-columns: repeat(2, 1fr);
-	  column-gap: 1.5rem;
-	}
-  }
-  
-  /* For large devices */
-  @media screen and (min-width: 1120px) {
-	.features-container {
-	  height: 100vh;
-	}
-  
-	.card__container {
-	  grid-template-columns: repeat(3, 1fr);
-	}
-	.card__img {
-	  width: 348px;
-	}
-	.card__data {
-	  width: 316px;
-	  padding-inline: 2.5rem;
-	}
-  }
+ 
 
 /* About Section */
 #about {
@@ -406,13 +369,13 @@ header .intro-text {
     border-radius: 3px;
     padding: 20px;
     transition: 0.5s;
-    left: 36%;
+    left: 0;
 	transform: translateX(-50%);
     top: 0;
 	box-shadow: 2px 2px 5px #222;
 }
 .item img{
-	width: 100%;
+	width: 90%;
 	height: 100%;
 }
 #next, #prev{
@@ -574,3 +537,91 @@ color: #999;
 #footer a:hover {
 	color: #eee;
 }
+
+
+
+ /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+	.container {
+	  margin-inline: 1rem;
+	}
+    
+	.card__data {
+	  width: 250px;
+	  padding: 1rem;
+	}
+   
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 768px) {
+	.card__container {
+	  grid-template-columns: repeat(2, 1fr);
+	  column-gap: 1.5rem;
+	}
+	
+  }
+  @media screen and (max-width: 768px){
+	.slider{
+		width: 100%;
+		height: 95%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.item{
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 388px;
+		text-align: justify;
+		background-color: #f5f2ea;
+		border-radius: 3px;
+		padding: 20px;
+		transition: 0.5s;
+		box-shadow: 2px 2px 5px #222;
+	}
+	.item img{
+		width: 400px;
+	}
+	#next, #prev{
+		position: absolute;
+		top: 40%;
+		color: #222;
+		background-color: transparent;
+		border: none;
+		font-size: large;
+		font-family: monospace;
+		font-weight: bold;
+		left: 10px;
+		z-index: 5;
+	}
+	#next{
+		left: unset;
+		right: 10px;
+	}
+	
+	#team img{
+		width: 90%;
+	}
+  }
+  /* For large devices */
+  @media screen and (min-width: 1120px) {
+	.features-container {
+	  height: 100vh;
+	}
+  
+	.card__container {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+	.card__img {
+	  width: 348px;
+	}
+	.card__data {
+	  width: 316px;
+	  padding-inline: 2.5rem;
+	}
+  }
