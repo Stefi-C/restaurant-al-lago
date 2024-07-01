@@ -23,7 +23,7 @@ h2 {
 h2::after {
 	position: absolute;
 	content: "";
-	background: #c44711;
+	background: #c1b98e;
 	height: 2px;
 	width: 70px;
 	bottom: 0;
@@ -159,8 +159,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #ddd;
-	border: 2px solid #c44711;
-	background-color: #c44711;
+	border: 2px solid #c1b98e;
+	background-color: #c1b98e;
 }
 /* Header Section */
 .intro {
@@ -373,7 +373,7 @@ header .intro-text {
 #about .about-img {
 	background:linear-gradient(to bottom, #695a0d83 0%, #c1b98e6d 100%), url(../img/bg-4.jpeg) center center no-repeat;
 	background-size: cover;
-	height: 570px;
+	height: 670px;
 }
 #about p {
 	line-height: 24px;
@@ -388,7 +388,7 @@ header .intro-text {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	background-color: #222;
+	background-color: #f5f2ea;
 }
 
 .slider{
@@ -432,7 +432,7 @@ header .intro-text {
 }
 /* Gallery Section */
 #gallery {
-	padding: 0;
+	padding: 0px;
 }
 #gallery .gallery-item {
 	margin: 0 -15px;
