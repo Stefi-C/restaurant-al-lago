@@ -369,7 +369,7 @@ header .intro-text {
     border-radius: 3px;
     padding: 20px;
     transition: 0.5s;
-    left: 0;
+    left: 36%;
 	transform: translateX(-50%);
     top: 0;
 	box-shadow: 2px 2px 5px #222;
@@ -387,11 +387,12 @@ header .intro-text {
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
-    left: 400px;
+    left: 20%;
+	right: unset;
 }
 #next{
     left: unset;
-    right: 400px;
+    right: 20%;
 }
 /* Gallery Section */
 #gallery {
@@ -583,6 +584,7 @@ color: #999;
 		padding: 20px;
 		transition: 0.5s;
 		box-shadow: 2px 2px 5px #222;
+		left: 0;
 	}
 	.item img{
 		width: 400px;
@@ -610,6 +612,7 @@ color: #999;
   }
   /* For large devices */
   @media screen and (min-width: 1120px) {
+	
 	.features-container {
 	  height: 100vh;
 	}
@@ -623,5 +626,10 @@ color: #999;
 	.card__data {
 	  width: 316px;
 	  padding-inline: 2.5rem;
+	}
+  }
+  @media screen and (max-width: 1120px) {
+	body{
+		border: 5px solid red;
 	}
   }
