@@ -342,6 +342,7 @@ header .intro-text {
 	line-height: 24px;
 	margin: 15px 0 30px;
 	color: #f5f2ea;
+	text-align: justify;
 }
 /* Menu Section */
 #restaurant-menu {
@@ -373,6 +374,9 @@ header .intro-text {
 	transform: translateX(-50%);
     top: 0;
 	box-shadow: 2px 2px 5px #222;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .item img{
 	width: 90%;
@@ -417,6 +421,9 @@ header .intro-text {
 #team .team-img {
 	display: inline-block;
 	position: relative;
+}
+#team p{
+	text-align: justify;
 }
 /* Contact Section */
 #contact {
@@ -619,20 +626,16 @@ color: #999;
 	}
   
 	.card__container {
-	  grid-template-columns: repeat(3, 1fr);
+	  grid-template-columns: repeat(4, 1fr);
 	}
-	.card__img {
-	  width: 248px;
-	}
+	
 	.card__data {
 	  width: 316px;
 	  padding-inline: 2.5rem;
 	}
   }
   @media screen and (max-width: 1120px) {
-	body{
-		border: 5px solid red;
-	}
+	
 	#next{
 		right: 10px;
 		z-index: 5;
@@ -640,5 +643,9 @@ color: #999;
 	#prev{
 		
 		left: 10px;
+	}
+
+	#team img{
+		width: 90%;
 	}
   }
