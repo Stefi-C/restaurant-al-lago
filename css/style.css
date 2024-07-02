@@ -381,6 +381,7 @@ header .intro-text {
 #next, #prev{
     position: absolute;
     top: 40%;
+	width: 50px;
     color: #222;
     background-color: transparent;
     border: none;
@@ -621,7 +622,7 @@ color: #999;
 	  grid-template-columns: repeat(3, 1fr);
 	}
 	.card__img {
-	  width: 348px;
+	  width: 248px;
 	}
 	.card__data {
 	  width: 316px;
@@ -631,5 +632,13 @@ color: #999;
   @media screen and (max-width: 1120px) {
 	body{
 		border: 5px solid red;
+	}
+	#next{
+		right: 10px;
+		z-index: 5;
+	}
+	#prev{
+		
+		left: 10px;
 	}
   }
