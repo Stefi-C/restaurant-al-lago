@@ -178,25 +178,19 @@
 </div>
 <!-- Gallery Section -->
 <div id="gallery">
-  <div class="container-fluid">
-    <div class="slider-wrapper">
-      
-      <ul class="image-list">
-        <img class="image-item" src="img/special1.jpg" alt="img-1" />
-        <img class="image-item" src="img/special3.jpg" alt="img-2" />
-        <img class="image-item" src="img/special2.jpg" alt="img-3" />
-        <img class="image-item" src="img/special4.jpg" alt="img-4" />
-        <img class="image-item" src="img/special1.jpg" alt="img-5" />
-        <img class="image-item" src="img/special2.jpg" alt="img-6" />
-        <img class="image-item" src="img/special3.jpg" alt="img-7" />
-        <img class="image-item" src="img/special4.jpg" alt="img-8" />
-        <img class="image-item" src="img/special1.jpg" alt="img-9" />
-        <img class="image-item" src="img/special2.jpg" alt="img-10" />
-      </ul>
-      
-    </div>
-   
+  <div id="gallery-slider">
+    <div class="gallery-slide"><img src="img/special1.jpg" alt=""></div>
+    <div class="gallery-slide"><img src="img/special2.jpg" alt=""></div>
+    <div class="gallery-slide"><img src="img/special1.jpg" alt=""></div>
+    <div class="gallery-slide"><img src="img/special2.jpg" alt=""></div>
+    <div class="gallery-slide"><img src="img/special1.jpg" alt=""></div>
+    <div class="gallery-slide"><img src="img/special2.jpg" alt=""></div>
+    <div class="gallery-slide"><img src="img/special1.jpg" alt=""></div>
+    <div class="gallery-slide"><img src="img/special2.jpg" alt=""></div>
+    <!-- Add more slides as needed -->
   </div>
+  <a class="prev" onclick="changeSlides(-1)">❮</a>
+  <a class="next" onclick="changeSlides(1)">❯</a>
 </div>
 <!-- Team Section -->
 <div id="team">
@@ -289,7 +283,7 @@
 </div>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<!--<script type="text/javascript" src="js/SmoothScroll.js"></script>-->
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
