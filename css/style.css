@@ -322,7 +322,7 @@ header .intro-text {
 /* About Section */
 #about {
 	padding: 0;
-	background: #c1b98e;
+	background: #695a0d;
 }
 #about h2::after {
 	bottom: 0;
@@ -351,7 +351,7 @@ header .intro-text {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	background-color: #f5f2ea;
+	background-color: #3e130787;
 }
 
 .slider{
@@ -401,21 +401,125 @@ header .intro-text {
 /* Gallery Section */
 #gallery {
 	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height:100vh;
+	background: #695a0d;
+	transform-style: preserve-3d;
 }
-#gallery .gallery-item {
-	margin: 0 -15px;
+.gallery-box{
+	position: relative;
+	display: flex;
+	transform-style: preserve-3d;
+	perspective: 500px;
 }
-#gallery-slider {
-	width: 600px;
+.gallery-item{
+	position: absolute;
+	top: calc(50% - 250px);
+	left: calc(50% - 150px);
+	width: 300px;
 	height: 400px;
-	overflow: hidden;
-  }
-  .gallery-slide {
-	width: 600px;
-	height: 400px;
-	float: left;
-  }
- 
+	background: #c1b98e;
+	transition: 0.5s;
+	box-shadow: 0 0 100px rgba(0,0,0,0.5);
+	transform-style: preserve-3d;
+	transform-origin: bottom;
+	user-select: none;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,transparent, #0002);
+}
+.gallery-item:nth-child(1){
+	transform: translate3d(-250px,0,0) scale(0.8) 
+	rotateY(25deg);
+	z-index: 1;
+}
+.gallery-item:nth-child(2){
+	transform: translate3d(-250px,0,0) scale(0.8) 
+	rotateY(25deg);
+	z-index: 2;
+	
+}
+.gallery-item:nth-child(3){
+	transform: translate3d(-150px,0,0) scale(0.9) 
+	rotateY(15deg);
+	z-index: 3;
+}
+.gallery-item:nth-child(4){
+	transform: translate3d(0px,0,0) scale(1) 
+	rotateY(0deg);
+	z-index: 6;
+}
+.gallery-item:nth-child(5){
+	transform: translate3d(150px,0,0) scale(0.9) 
+	rotateY(-15deg);
+	z-index: 3;
+}
+.gallery-item:nth-child(6){
+	transform: translate3d(250px,0,0) scale(0.8) 
+	rotateY(-25deg);
+	z-index: 2;
+	
+}
+.gallery-item:nth-child(1){
+	transform: translate3d(250px,0,0) scale(0.8) 
+	rotateY(-25deg);
+	z-index: 1;
+}
+
+.gallery-item img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.buttons{
+	position: absolute;
+	bottom: 75px;
+	display: flex;
+	gap: 20px;
+}
+.buttons span{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.5;
+}
+.buttons span:hover{
+	opacity: 1;
+}
+.buttons span::before{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	rotate: -45deg;
+}
+.buttons span:last-child::before{
+	content: '';
+	position: absolute;
+	left: initial;
+	right: 20px;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	rotate: 135deg;
+}
+
+
+
+
+
 /* Team Section */
 #team {
 	padding: 120px 0;

@@ -86,24 +86,3 @@ let items = document.querySelectorAll('.slider .item');
       loadShow();
   }
 
-
-  //gallery
-  let index = 0; // Current slide
-const galSlides = document.querySelectorAll(".gallery-slide");
-
-function showSlide(n) {
-  galSlides.forEach((slide, i) => {
-    galSlides.style.display = i === n ? "block" : "none";
-  });
-}
-
-// Next/previous controls
-function changeSlides(n) {
-  index += n;
-  if (index >= slides.length) index = 0;
-  if (index < 0) index = slides.length - 1;
-  showSlide(index);
-}
-
-// Initial display
-showSlide(index);
