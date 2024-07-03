@@ -86,3 +86,16 @@ let items = document.querySelectorAll('.slider .item');
       loadShow();
   }
 
+//gallery
+let prevGallery = document.querySelector(".prev");
+let nextGallery = document.querySelector(".next");
+
+
+nextGallery.addEventListener('click', function(){
+  let galItems = document.querySelectorAll(".gallery-item");
+  document.querySelector('.gallery-box').appendChild(galItems[0]);
+})
+prevGallery.addEventListener('click', function(){
+  let galItems = document.querySelectorAll(".gallery-item");
+  document.querySelector('.gallery-box').prepend(galItems[galItems.length - 1]);
+})
