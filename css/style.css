@@ -344,26 +344,46 @@ header .intro-text {
 #about {
 	padding: 0;
 	background: #695a0d;
+	height: 100vh;
+}
+.about{
+	display: flex;
 }
 #about h2::after {
 	bottom: 0;
 	margin-left: 0;
 	left: 0;
 }
-#about .about-text {
-	padding: 80px 0;
-}
-#about .about-img {
-	background:linear-gradient(to bottom, #695a0d83 0%, #c1b98e6d 100%), url(../img/bg-4.jpeg) center center no-repeat;
+
+.left-about{
+	background:linear-gradient(to bottom, #695a0d83 0%, #c1b98e6d 100%);
 	background-size: cover;
-	height: 670px;
+	width: 60%;
+	height: 100vh;
+	
 }
-#about p {
-	line-height: 24px;
-	margin: 15px 0 30px;
-	color: #c1b98e;
+.left-about img{
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+}
+.right-about{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #695a0d;
+}
+.about-desc{
 	text-align: justify;
+	width: 80%;
+	color: #c1b98e;
 }
+
+
+
 /* Menu Section */
 #restaurant-menu {
 	padding: 100px 0 60px 0;
@@ -402,22 +422,52 @@ header .intro-text {
 	width: 90%;
 	height: 100%;
 }
-#next, #prev{
-    position: absolute;
-    top: 40%;
-	width: 50px;
-    color: #222;
-    background-color: transparent;
-    border: none;
-    font-size: xxx-large;
-    font-family: monospace;
-    font-weight: bold;
-    left: 20%;
-	right: unset;
+.btn{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 999;
 }
-#next{
-    left: unset;
-    right: 20%;
+.buttons{
+	position: absolute;
+	bottom: -55px;
+	display: flex;
+	gap: 20px;
+}
+.buttons span{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #222;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.5;
+}
+.buttons span:hover{
+	opacity: 1;
+}
+.buttons span::before{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #222;
+	border-left: 2px solid #222;
+	rotate: -45deg;
+}
+.buttons span:last-child::before{
+	content: '';
+	position: absolute;
+	left: initial;
+	right: 20px;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #222;
+	border-left: 2px solid #222;
+	rotate: 135deg;
 }
 
 
@@ -572,21 +622,26 @@ header .intro-text {
 /* Team Section */
 #team {
 	padding: 120px 0;
+
+}
+.team{
+	position: relative;
+	display: flex;
 }
 #team h2::after {
 	bottom: 0;
 	margin-left: 0;
-	left: 0;
+	left: 30px;
 }
 #team img {
 	max-width: 550px;
 }
 #team .team-img {
-	display: inline-block;
-	position: relative;
+	margin: 20px;
 }
 #team p{
 	text-align: justify;
+	margin: 50px;
 }
 /* Contact Section */
 #contact {
@@ -680,7 +735,11 @@ color: #999;
 /* Footer Section*/
 #footer {
 	background: #f5f2ea;
+	height: 60px;
 	padding: 40px 0 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 #footer .social {
 	margin-top: -5px;
@@ -759,25 +818,31 @@ color: #999;
 	.item img{
 		width: 400px;
 	}
-	#next, #prev{
-		position: absolute;
-		top: 40%;
-		color: #222;
-		background-color: transparent;
-		border: none;
-		font-size: large;
-		font-family: monospace;
-		font-weight: bold;
-		left: 10px;
-		z-index: 5;
-	}
-	#next{
-		left: unset;
-		right: 10px;
-	}
+	
 	
 	#team img{
 		width: 90%;
+	}
+	.about{
+		display:flex;position: relative;
+		flex-direction: column;
+	}
+	.left-about,.right-about{
+        width: 100%;
+	}.left-about{
+		
+		opacity: 0.5;
+	}
+	.right-about{
+		position: absolute;
+		height: 100%;
+		z-index: 888;
+		background:transparent;
+		
+	}
+	.about-desc{
+		background-color: #695a0d;
+		padding: 10px;
 	}
   }
   /* For large devices */
@@ -798,15 +863,19 @@ color: #999;
   }
   @media screen and (max-width: 1120px) {
 	
-	#next{
-		right: 10px;
-		z-index: 5;
-	}
-	#prev{
-		
-		left: 10px;
-	}
 
+	.item{
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		height: 388px;
+		text-align: justify;
+		background-color: #f5f2ea;
+		border-radius: 3px;
+		padding: 20px;
+		transition: 0.5s;
+		box-shadow: 2px 2px 5px #222;
+	}
 	#team img{
 		width: 90%;
 	}
