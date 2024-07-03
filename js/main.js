@@ -1,8 +1,8 @@
-
+ /*
 function main() {
 
 (function () {
-   'use strict';
+  
    
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -31,7 +31,7 @@ function main() {
     $('body').scrollspy({ 
         target: '.navbar-default',
         offset: 80
-    });
+      });
 
 	// Hide nav on click
   $(".navbar-nav li a").click(function (event) {
@@ -47,7 +47,7 @@ function main() {
 
 }
 main();
-
+ */ 
 //slider menu
 let items = document.querySelectorAll('.slider .item');
     let next = document.getElementById('next');
@@ -85,7 +85,7 @@ let items = document.querySelectorAll('.slider .item');
       active = active - 1 >= 0 ? active - 1 : active;
       loadShow();
   }
-
+/*
 //gallery
 let prevGallery = document.querySelector(".prev");
 let nextGallery = document.querySelector(".next");
@@ -98,4 +98,4 @@ nextGallery.addEventListener('click', function(){
 prevGallery.addEventListener('click', function(){
   let galItems = document.querySelectorAll(".gallery-item");
   document.querySelector('.gallery-box').prepend(galItems[galItems.length - 1]);
-})
+})*/
