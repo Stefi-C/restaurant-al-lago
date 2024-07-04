@@ -398,17 +398,17 @@ header .intro-text {
 .slider{
     position: relative;
     width: 100%;
-    height: 95%;
-    overflow: hidden;
+    height: 70vh;
+	margin-top: -70px;
 }
 .item{
     position: absolute;
     width: 400px;
-    height: 388px;
+    height: 468px;
     text-align: justify;
     background-color: #f5f2ea;
     border-radius: 3px;
-    padding: 20px;
+    padding: 10px;
     transition: 0.5s;
     left:36%;
 	transform: translateX(-50%);
@@ -430,7 +430,7 @@ header .intro-text {
 }
 .buttons{
 	position: absolute;
-	bottom: -55px;
+	bottom: -59px;
 	display: flex;
 	gap: 20px;
 }
@@ -647,17 +647,33 @@ header .intro-text {
 #contact {
 	padding: 100px 0;
 	background: #3e1307;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.text-center{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 #contact .contact-item p {
 	font-size: 15px;
 	color: #777;
+	text-align: center;
 }
 #contact .section-title {
 	margin-top: 60px;
 	margin-bottom: 40px;
 }
 #contact form {
+	width: 600px;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 #contact h3 {
 	position: relative;
@@ -712,6 +728,7 @@ label {
 }
 .form-control::-webkit-input-placeholder {
 color: #999;
+text-align: center;
 }
 .form-control:-moz-placeholder {
 color: #999;
@@ -734,12 +751,14 @@ color: #999;
 }
 /* Footer Section*/
 #footer {
-	background: #f5f2ea;
-	height: 60px;
-	padding: 40px 0 20px 0;
+	height: 5px;
+}
+.foot-container{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: center;
+	height: auto;
+	background-color:#222;
 }
 #footer .social {
 	margin-top: -5px;
@@ -756,17 +775,17 @@ color: #999;
 	transition: all 0.3s;
 }
 #footer .social i.fa:hover {
-	color: #3e1307;
+	color: #c1b98e;
 }
 #footer p {
 	font-size: 14px;
-	color: #3e1307;
+	color: #c1b98e;
 }
 #footer a {
 	color: #695a0d;
 }
 #footer a:hover {
-	color: #3e1307;
+	color: #c1b98e;
 }
 
 
