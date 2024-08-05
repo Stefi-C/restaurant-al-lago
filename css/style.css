@@ -889,6 +889,9 @@ color: #999;
 		background-color: #695a0d;
 		padding: 10px;
 	}
+	.btn{
+		margin-top: -70px;
+	}
 	
   }
   /* For small devices */
